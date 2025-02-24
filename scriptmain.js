@@ -56,7 +56,7 @@ window.addEventListener('click', resetTimeout);
 // Проверка авторизации при загрузке страницы
 window.addEventListener('load', function()  {
     if (!localStorage.getItem('authenticated')) {
-        window.location.replace = 'index.html';
+        window.location.replace('index.html');
     } else {
         resetTimeout();
     }
