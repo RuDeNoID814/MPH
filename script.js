@@ -10,7 +10,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     if (username == correctUsername && password == correctPassword) {
         // Успешная авторизация и перенаправление на другую страницу
-        sessionStorage.setItem('authenticated', 'true');
+        localStorage.setItem('authenticated', 'true');
         window.location.href = "main.html";
     } else {
         // Ошибка авторизации
@@ -25,5 +25,12 @@ window.addEventListener('pageshow', function(event) {
     if (event.persisted || (this.window.performance && window.performance.navigation.type === 2)) {
         document.getElementById('username').value = '';
         document.getElementById('password').value = '';
+    }
+});
+
+// Проверка авторизации при загрузке страницы
+window.addEventListener('load', function() {
+    if (localStorage.getItem('authenticated')) {
+        window.location.replace('main.html');
     }
 });
