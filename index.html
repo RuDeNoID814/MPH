@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>MPH</title>
+    
+    <title>Авторизация</title>
 </head>
 <body>
-    <div class="login-form">
-        
+    <div class="login-container">
+        <h2>Вход</h2>
+        <form id="login-form">
+            <div>
+                <label for="username">Логин:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            <button type="submit">Войти</button>
+        </form>
+        <div id="error-message" id="error-message"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
