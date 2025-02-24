@@ -10,7 +10,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     if (username == correctUsername && password == correctPassword) {
         // Успешная авторизация и перенаправление на другую страницу
-        window.location.href = "main/main.html"
+        window.location.href = "main.html"
     } else {
         // Ошибка авторизации
         document.getElementById('error-message').textContent = 'Неверный логин или пароль';
@@ -25,4 +25,4 @@ window.addEventListener('pageshow', function(event) {
         document.getElementById('username').value = '';
         document.getElementById('password').value = '';
     }
-})
+});
