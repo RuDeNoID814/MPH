@@ -1,5 +1,5 @@
 // Кнопка "Начало работы"
-document.getElementById('start-work-btn').addEventListener('click', function()  {
+document.getElementById('start-work-btn').addEventListener('click', function() {
     window.open('https://supchat.taxi.yandex-team.ru/settings', '_blank');
     window.open('https://yandex.ru/maps/', '_blank');
     window.open('https://delivery-admin-frontend-external.taxi.yandex-team.ru/corp-claims?external_order_id=307577825', '_blank');
@@ -11,7 +11,7 @@ document.getElementById('logout-btn').addEventListener('click', function()  {
 });
 
 // Система бездействия
-let inactivityTime = 300000; // 5 минут в миллисекундах
+let inactivityTime = 21600000; // 6 часов в миллисекундах
 let timeoutId;
 
 function resetTimeout() {
