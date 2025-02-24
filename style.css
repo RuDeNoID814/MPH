@@ -5,7 +5,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: url('images/cat.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .login-container {
@@ -13,14 +15,17 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .login-container h2 {
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .login-container div {
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .login-container label {
@@ -52,4 +57,6 @@ body {
 .error-message {
     color: red;
     margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
 }

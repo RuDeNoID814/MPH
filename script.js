@@ -1,3 +1,4 @@
+// Скрипт авторизации на сайте
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -8,11 +9,20 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const correctPassword = '171051618';
 
     if (username == correctUsername && password == correctPassword) {
-        // Успешная авторизация
-        alert('Вход выполнен успешно');
-        // Здесь можно перенаправить пользователя на другую страницу или выполнить другие действия
+        // Успешная авторизация и перенаправление на другую страницу
+        window.location.href = "main/main.html"
     } else {
         // Ошибка авторизации
-        document.getElementById('error-message').textContent = 'Неверный логин или пароль.';
+        document.getElementById('error-message').textContent = 'Неверный логин или пароль';
+        document.getElementById('username').value = '';
+        document.getElementById('password').value = '';
     }
 });
+
+// Очистка полей при возврате на страицу
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted || (this.window.performance && window.performance.navigation.type === 2)) {
+        document.getElementById('username').value = '';
+        document.getElementById('password').value = '';
+    }
+})
