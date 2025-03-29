@@ -1,0 +1,18 @@
+body {
+    background-color: var(--color-bg);
+}
+
+div, p, h4  {
+    color: var(--color-text__2);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1480px;
+}
+
+button {
+    border: none;
+    padding: 0;
+}
+

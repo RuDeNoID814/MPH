@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Авторизация</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
+    <title>MPH - Экспресс тест</title>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Вход</h2>
-        <form id="login-form">
-            <div>
-                <label for="username">Логин:</label>
-                <input type="text" name="username" id="username" required>
+    <header class="main">
+        <div class="container">
+            <div class="block-menu">
+                <!-- Свойства/текст для кнопок -->
+                <div id="text1" style="display: none;">Дайте мне, пожалуйста, немного времени, скоро вернусь с ответом</div>
+                <div id="text1" style="display: none;">Дайте мне, пожалуйста, немного времени, скоро вернусь с ответом</div>
+                <div id="text1" style="display: none;">Дайте мне, пожалуйста, немного времени, скоро вернусь с ответом</div>
+                <!-- Левая колонна -->
+                <div class="block-column-left column">
+                    <!-- БЛОК 1 - ХОЛДЫ -->
+                    <div class="block-left__1 block__bg">
+                        <h4>Холды</h4>
+                        <button class="button" onclick="copyTextID('text1')">Холд 1</button>
+                    </div>
+                </div>
+                <!-- Правая колонна -->
+                <div class="block-column-right column">
+                    <!-- БЛОК ! - Изменения в заказе -->
+                    <div class="block-right__1 block__bg">
+                        <h4>Изменения в заказе</h4>
+                        <button class="button">Адрес >150м</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="password">Пароль:</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <button type="submit">Войти</button>
-        </form>
-        <div id="error-message" class="error-message"></div>
-    </div>
-    <script src="script.js"></script>
+        </div>
+    </header>
+
+    <script src="./index.js"></script>
 </body>
 </html>
