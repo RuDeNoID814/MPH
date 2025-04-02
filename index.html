@@ -8,32 +8,113 @@
     <title>MPH - Экспресс тест</title>
 </head>
 <body>
-    <header class="main">
+    <header class="header">
         <div class="container">
-            <div class="block-menu">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__list">
+                        <a href="#" class="header__list-a">Возврат товара</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="block__menu">
                 <!-- Свойства/текст для кнопок -->
                 <div id="text1" style="display: none;">Дайте мне, пожалуйста, немного времени, скоро вернусь с ответом</div>
-                <div id="text1" style="display: none;">Дайте мне, пожалуйста, немного времени, скоро вернусь с ответом</div>
-                <div id="text1" style="display: none;">Дайте мне, пожалуйста, немного времени, скоро вернусь с ответом</div>
+                <div id="text2" style="display: none;">Изменение адреса для экспресс-доставки не предусмотрено. Если не готовы принять посылку по изначальному адресу, то лучше отменить текущий заказ и создать новый с верным адресом самостоятельно или с моей помощью.
+
+Если вы отмените заказ, то статус заказа изменится в течение 24 часов.
+
+[ПРО ВОЗВРАТ СРЕДСТВ/ПРОМОКОД/КЕШБЭК]
+
+Отменённый заказ не восстанавливается, а стоимость и наличие товара могут меняться</div>
+                <div id="text3" style="display: none;">Простите, доставили заказ раньше интервала.
+
+Мы внимательно разбираемся в каждой ситуации, связанной с доставкой заказов, поэтому сделаем всё возможное, чтобы таких ситуаций не возникало.
+
+Примите, пожалуйста, промокод на 500 ₽, применить его можно к заказам от 1500 ₽. Он появится в личном кабинете в разделе [«Промокоды»](https://market.yandex.ru/promocodes). 
+
+Промокод: 
+
+[ПРО ВОЗВРАТ СРЕДСТВ/ПРОМОКОД/КЕШБЭК]
+
+Отменённый заказ не восстанавливается, а стоимость и наличие товара могут меняться. Если заказ актуален, можете переоформить самостоятельно или с моей помощью</div>
+                <div id="text4" style="display: none;">Простите, пожалуйста, что не доставили заказ и отменили его.
+
+Отправляю вам промокод на скидку 10% с лимитом (1000/2000) рублей. Он появится в личном кабинете в разделе [«Промокоды»](https://market.yandex.ru/promocodes). 
+
+Промокод: 
+
+[ПРО ВОЗВРАТ СРЕДСТВ/ПРОМОКОД/КЕШБЭК]
+
+Отменённый заказ не восстанавливается, а стоимость и наличие товара могут меняться. Если заказ актуален, можете переоформить самостоятельно или с моей помощью</div>
+                <div id="text5" style="display: none;">Простите, что так получилось. В течение дня напишу вам и предложу варианты решения. Подробности о возврате тут: https://yandex.ru/support/market/return.html</div>
+                <div id="text6" style="display: none;">Простите, на этапе доставки что-то пошло не так, поэтому заказ был отменён. Заказ изменит статус на «Отменён» в течение 24 часов.
+
+[ПРО ВОЗВРАТ СРЕДСТВ/ПРОМОКОД/КЕШБЭК]
+
+Отменённый заказ не восстанавливается, а стоимость и наличие товара могут меняться. Если заказ актуален, то его можно переоформить самостоятельно или с моей помощью
+                </div>
+                <div id="text7" style="display: none;">Вижу, что ребята из отдела возвратов работают по вашему обращению к заказу [КАКОМУ_ТОВАРУ]. В ближайшее время они вернутся с обратной связью на почту [УКАЖИ_ПОЧТУ]. Если будут другие вопросы по возврату, их можно задать в ответ на письмо от них</div>
+                <div id="text8" style="display: none;">Вижу, что вы уже оформили возврат. 
+
+Я работаю вместе с ребятами из отдела возвратов по вашему обращению [КАКИМ_ТОВАРОМ?]. Обязательно найдем другое решение и поможем во всем разобраться, дождитесь, пожалуйста, в ближайшее время обратной связи в виде письма на почту: [ПОЧТА], а если появятся другие вопросы, то их можно задать в ответ на письмо.</div>
+                <div id="text9" style="display: none;">Простите, что не доставили заказ вовремя.
+
+Узнала у курьера, что заказ будет доставлен в течение [КАКОГО_ВРЕМЕНИ].
+                    
+Подскажите, пожалуйста, вы готовы подождать товар?</div>
+                <div id="text10" style="display: none;">Сейчас я свяжусь с курьером и уточню информацию по заказу, скоро вернусь с ответом</div>
+                
                 <!-- Левая колонна -->
-                <div class="block-column-left column">
-                    <!-- БЛОК 1 - ХОЛДЫ -->
-                    <div class="block-left__1 block__bg">
+                <div class="block__menu__column--left column">
+                    <div class="block__menu--left__1 block__bg">
                         <h4>Холды</h4>
-                        <button class="button" onclick="copyTextID('text1')">Холд 1</button>
+                        <div class="block__button">
+                            <button class="button" onclick="copyTextID('text1')">Холд 1</button>
+                            <button class="button" onclick="copyTextID('text10')">Сейчас свяжусь с курьером</button>
+                        </div>
+                    </div>
+                    <div class="block__menu--left__2 block__bg">
+                        <h4>Отмена</h4>
+                        <div class="block__button">
+                            <button class="button" onclick="copyTextID('text4')">Отмена по наш.вине после задержки</button>
+                            <button class="button" onclick="copyTextID('text6')">НДЗ КУР <br>Почему отменён?</button>
+                        </div>
+                    </div>
+                    <div class="block__menu--left__3 block__bg">
+                        <h4>Задержка</h4>
+                        <div class="block__button">
+                            <button class="button" onclick="copyTextID('text9')">Задержка и курьер направляется к нам, говорим время/уточняем</button>
+                            <button class="button">Заглушка</button>
+                            <button class="button" onclick="copyTextID('text3')">Доставка раньше интервала</button>
+                        </div>
+                    </div>
+                    <div class="block__menu--left__4 block__bg">
+                        <h4>Направление на РО</h4>
+                        <div class="block__button">
+                            <button class="button" onclick="copyTextID('text5')">Качество цветов</button>
+                            <button class="button" onclick="copyTextID('text7')">Направляем на РО</button>
+                            <button class="button" onclick="copyTextID('text8')">Направляем на РО<br>проблема в инстр.</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Правая колонна -->
-                <div class="block-column-right column">
-                    <!-- БЛОК ! - Изменения в заказе -->
-                    <div class="block-right__1 block__bg">
+                <div class="block__menu__column--right column">
+                    <div class="block__menu--right__1 block__bg">
                         <h4>Изменения в заказе</h4>
-                        <button class="button">Адрес >150м</button>
+                        <div class="block__button">
+                            <button class="button" onclick="copyTextID('text2')">Адрес >150м</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </main>
 
     <script src="./index.js"></script>
 </body>

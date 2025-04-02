@@ -6,6 +6,11 @@ div, p, h4  {
     color: var(--color-text__2);
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1480px;
@@ -14,5 +19,7 @@ div, p, h4  {
 button {
     border: none;
     padding: 0;
+    margin: 0;
 }
+
 
